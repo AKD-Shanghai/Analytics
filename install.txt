@@ -1,0 +1,6 @@
+sudo apt-get install libatlas-base-dev libprotobuf-dev libleveldb-dev libsnappy-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler -y
+
+sudo apt-get install libtcmalloc-minimal4
+sudo vim /home/nvidia/.bashrc 
+export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
+
