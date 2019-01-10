@@ -16,74 +16,6 @@
         <objconservetime>50</objconservetime>
         <detectorStructureType>ssd</detectorStructureType>
     </SMOKEDetection>
-
-    <FIREDetection>
-        <model_dir>/home/nvidia/Desktop/AN-demo/model</model_dir>
-        <model_file>fire.prototxt</model_file>
-        <weight_file>fire.caffemodel</weight_file>
-        <confidence_thresh>0.1</confidence_thresh>
-        <scale_size>0.0078125</scale_size>
-        <gpu_id>0</gpu_id>
-        <use_origianlImage>0</use_origianlImage>
-        <deteclass_name>unknowcategory ignore likeFire fire</deteclass_name>
-        <deteclass_label>0 1 2 3</deteclass_label>
-        <usefulLabel>3</usefulLabel>
-        <overlap>0.5</overlap>
-        <sucessratio>0.5</sucessratio>
-        <objconservetime>50</objconservetime>
-        <detectorStructureType>ssd</detectorStructureType>
-    </FIREDetection>
-    
-    <OILDetection>
-        <model_dir>/home/nvidia/Desktop/AN-demo/model</model_dir>
-        <model_file>oil.prototxt</model_file>
-        <weight_file>oil.caffemodel</weight_file>
-        <confidence_thresh>0.1</confidence_thresh>
-        <scale_size>1</scale_size>
-        <gpu_id>0</gpu_id>
-        <deteclass_name>unknowcategory water like_water</deteclass_name>
-        <deteclass_label>0 1 2</deteclass_label>
-        <usefulLabel>1</usefulLabel>
-        <overlap>0.6</overlap>
-        <sucessratio>0.5</sucessratio>
-        <objconservetime>100</objconservetime>
-        <detectorStructureType>ssd</detectorStructureType>
-    </OILDetection>
-
-    <CARPERSONDetection>										
-        <model_dir>/home/nvidia/Desktop/AN-demo/model</model_dir>			
-        <model_file>deploy_carperson.prototxt</model_file>
-        <weight_file>carperson320.caffemodel</weight_file>
-        <confidence_thresh>0.1</confidence_thresh>
-        <scale_size>1.0</scale_size>		   
-        <gpu_id>0</gpu_id>	
-        <deteclass_name>unknowcategory ignore person motorvechicle nonmotorvechicle</deteclass_name>
-        <deteclass_label>0 1 2 3 4</deteclass_label>
-        <usefulLabel>2 3</usefulLabel>
-        <overlap>0.6</overlap>
-        <sucessratio>0.0</sucessratio>
-        <objconservetime>100</objconservetime>
-        <detectorStructureType>ssd</detectorStructureType>
-    </CARPERSONDetection>
-
-    <!-- 工作服检测!-->
-    <WORKCLOTHESDetection>
-        <detector_name>rfcn</detector_name>										
-        <model_dir>/home/nvidia/Desktop/AN-demo/model</model_dir>
-        <model_file>deploy_workingclothes.prototxt</model_file>
-        <weight_file>workingclothes_refinedet_vgg16_192x192_iter_200000.caffemodel</weight_file>
-        <confidence_thresh>0.1</confidence_thresh>
-        <scale_size>1</scale_size>
-        <gpu_id>0</gpu_id>
-        <use_origianlImage>1</use_origianlImage>
-        <deteclass_name>unknowcategory ignore workinghat upbody downbody head person</deteclass_name>
-        <deteclass_label>0 1 2 3 4 5 6</deteclass_label>
-        <usefulLabel>2 3 4 5 6</usefulLabel>
-        <overlap>0.6</overlap>
-        <sucessratio>0.5</sucessratio>
-        <objconservetime>100</objconservetime>
-        <detectorStructureType>ssd</detectorStructureType>
-    </WORKCLOTHESDetection>
     
     <FACEDetection>
         <model_dir>/home/nvidia/Desktop/AN-demo/model/MTmodel</model_dir>
@@ -101,21 +33,5 @@
         <objconservetime>100</objconservetime>
         <detectorStructureType>face</detectorStructureType>
     </FACEDetection>
-    <CARPLATEDetection>
-        <detector_name>rfcn</detector_name>										
-        <model_dir>/home/nvidia/Desktop/AN-demo/model</model_dir>
-        <model_file>CarPlate.prototxt</model_file>
-        <weight_file>CarPlate.caffemodel</weight_file>
-        <confidence_thresh>0.1</confidence_thresh>
-        <scale_size>0.0078125</scale_size>
-        <gpu_id>0</gpu_id>
-        <use_origianlImage>1</use_origianlImage>
-        <deteclass_name>unknowcategory carplate</deteclass_name>
-        <deteclass_label>0 1</deteclass_label>
-        <usefulLabel>1</usefulLabel>
-        <overlap>0.6</overlap>
-        <sucessratio>0.5</sucessratio>
-        <objconservetime>100</objconservetime>
-        <detectorStructureType>ssd</detectorStructureType>
-    </CARPLATEDetection>
+    
 </opencv_storage>
